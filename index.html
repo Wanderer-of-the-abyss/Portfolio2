@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -223,6 +223,8 @@
 
     }
 
+
+
     #google:hover {
         border-color: tomato;
         transform: translateY(-8px);
@@ -239,7 +241,11 @@
 
     }
 
-    #middle {}
+    #middle {
+        background-image: url(https://unblast.com/wp-content/uploads/2018/10/Sky-Stars-Pattern.jpg);
+        display: flex;
+        justify-content: center;
+    }
 
     nav {
         z-index: 1;
@@ -260,6 +266,14 @@
 
     #tir {
         margin-top: 15%;
+    }
+
+    @media (max-height: 761px) and (max-width: 700px) {
+        nav {
+
+            position: fixed;
+        }
+
     }
 </style>
 
@@ -302,8 +316,8 @@
         </form>
     </section>
     <section id="middle">
-        <video autoplay muted loop id="myVideo">
-            <source src="space.mp4" type="video/mp4">
+        <video autoplay muted loop id="myVideo" width="1000" height="800">
+            <source src="C:\Users\neutr\OneDrive\Desktop\space.mp4" type="video/mp4">
         </video>
 
     </section>
@@ -322,7 +336,7 @@
                     class="fab fa-twitter"></i>
                 Twitter</a>
             <a href="tel:555-555-5555" id="profile-link"><i class="fas fa-mobile-alt"></i> Call me</a>
-            <a href="https://www.facebook.com/profile.php?id=100073173090255" target="_blank" id="profile-link"><i
+            <a href="https://facebook.com/freecodecamp" target="_blank" id="profile-link"><i
                     class="fab fa-facebook-square"></i> Facebook</a>
         </div>
         <hr id="line">
