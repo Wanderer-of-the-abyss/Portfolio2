@@ -1,347 +1,688 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="margin:=device-margin:, initial-scale=1.0">
     <title>Subhankar Panda</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/b6960363e6.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+
 </head>
+<html>
+
 <style>
     html {
+        font-size: 1rem;
         scroll-behavior: smooth;
+        color: aliceblue;
+        text-align: center;
     }
 
+
     body {
+
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         margin: 0;
         background-color: rgb(13, 0, 49);
-
-
-    }
-
-    .nav {
-        background-color: black;
-        padding: 20px 20px;
-        margin-top: 0px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
+        transition: 1s all;
     }
 
 
+    h1 {
+        font-family: monospace;
+
+        font-size: 2.2em;
+
+    }
+
+    .animation1 {
+        letter-spacing: 8px;
+        margin-bottom: 20px;
+
+
+
+        animation: cool 2.1s;
+        animation-timing-function: linear;
+
+    }
+
+
+
+    @keyframes cool {
+        0% {
+            color: black;
+            margin-bottom: -40px;
+        }
+
+        30% {
+            letter-spacing: 50px;
+            margin-bottom: -40px;
+        }
+
+        85% {
+
+            letter-spacing: 15px;
+            margin-bottom: -40px;
+
+        }
+    }
 
     ul {
-
         display: flex;
-        justify-content: space-evenly;
-        margin-left: 49%;
-
-
-    }
-
-    #button {
-
-
-        transition: all 0.35s ease-out;
-
+        justify-content: space-around;
+        list-style: none;
+        margin-right: 2rem;
     }
 
     a {
         text-decoration: none;
         color: white;
         font-family: monospace;
+
+    }
+
+    li {
+        padding: 1rem;
+        color: white;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 1.3rem;
+    }
+
+    .nav {
+        display: flex;
+        /* flex-direction: column; */
+
+        position: fixed;
+        justify-content: flex-end;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: rgb(49, 49, 49);
+        box-shadow: 0 2px 0 rgb(169, 220, 255);
+        z-index: 10;
+
+
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        margin-right: 2rem;
+    }
+
+
+    #one {
+        display: flex;
+        background-image: url(E:\mike-yukhtenko-wfh8dDlNFOk-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        color: white;
+        font-family: monospace;
         font-size: 1.5rem;
+    }
+
+
+
+    #two {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(26, 23, 19);
+    }
+
+    #three {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background: rgb(0, 0, 0);
+
+    }
+
+    #four {
+        display: flex;
+        /* flex-direction: column-reverse; */
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(255, 234, 234);
+        background-image: url(https://media.istockphoto.com/photos/studio-microphone-and-pop-shield-on-mic-in-the-empty-recording-studio-picture-id1279654034?b=1&k=20&m=1279654034&s=170667a&w=0&h=jebzMhp_tlJi-3fLn3Ig8cYWG_JaF-vjt4SWLAI9o9Q=);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #button {
+
+        transition: all 0.35s ease-out;
     }
 
     #button:hover {
         color: white;
         border-style: solid;
         border-color: aqua;
-        border-radius: 3px;
-        padding: 10px 10px;
+        border-radius: .3rem;
+        padding: 0.8rem 0.8rem;
         box-shadow: 0em 0.5em 0.5em -0.4em aqua;
-        font-size: 1.5rem;
-    }
-
-    li {
-        list-style: none;
-        background: black;
 
     }
 
-    h1 {
-        font-family: monospace;
-        text-align: center;
-        font-size: 2.2em;
-
-    }
-
-    p {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        text-align: center;
-
-
-    }
-
-    h2 {
-        font-size: 2em;
-    }
-
-    #one {
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-        margin-top: 5%;
-        text-align: center;
-        background-color: #000;
-        background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
-        color: white;
-        font-family: monospace;
-        font-size: 1.5em;
-    }
-
-    #two {
-        background: linear-gradient(to bottom right, #b731f3, #0d4350);
-        height: 100vh;
-        transition: all 2s;
-
-    }
-
-    #two:hover {
-        background: linear-gradient(109.6deg, rgba(9, 9, 121, 1) 11.2%, rgba(144, 6, 161, 1) 53.7%, rgba(0, 212, 255, 1) 100.2%);
-    }
-
-    #three {
-        background: rgb(13, 0, 49);
-        height: 50vh;
-    }
-
-    #header-project {
-        border-bottom: 0.2rem solid black;
-        max-width: 640px;
-        margin: 0 auto 6rem auto;
-        font-size: 3em;
-        margin-top: 5%;
-    }
-
-    #last {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        text-align: center;
-        color: rgb(10, 206, 255);
-        margin-left: 3%;
-    }
-
-    #las {
-        color: rgb(255, 146, 126);
-        text-align: center;
-        margin-left: 3%;
-    }
-
-    #profile-link {
-
-        transition: all 0.25s;
+    @media (max-width: 28.75em) {
+        #four {
+            display: flex;
+            /* flex-direction: column-reverse; */
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(255, 234, 234);
 
 
-
-    }
-
-    #profile-link:hover {
-        color: aquamarine;
-        transform: translateY(8px);
-
-    }
-
-    #proj {
-        background: crimson;
-
-
-    }
-
-    #contact {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 3%;
-    }
-
-    #grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        grid-gap: 4rem;
-        width: 100%;
-        max-width: 1280px;
-        margin: 0 auto;
-        margin-bottom: 6rem;
-    }
-
-
-
-    .image {
-        height: calc(100% - 6.8rem);
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .title {
-        font-size: 2rem;
-        padding: 2rem 0.5rem;
-    }
-
-    #butt {
-        margin-left: 45%;
-        margin-top: 10%;
-
-
-    }
-
-    #google {
-        border-radius: 5px;
-        padding: 10px 10px;
-        border-color: black;
-        border-style: solid;
-        transition: all 0.55s;
-    }
-
-    #submit {
-        background: white;
-        border-radius: 4px;
-        transition: all 0.35s;
-        margin-right: 78%;
-        margin-top: 2%;
-        padding: 6px 7px;
-        border-style: solid;
-        font-family: monospace;
-
-    }
-
-
-
-    #google:hover {
-        border-color: tomato;
-        transform: translateY(-8px);
-        color: white;
-        background-color: black;
-
-    }
-
-    #submit:hover {
-
-        background: rgb(25, 125, 255);
-        border-color: cyan;
-        transform: rotateX(360deg);
-
-    }
-
-    #middle {
-        background-image: url(https://unblast.com/wp-content/uploads/2018/10/Sky-Stars-Pattern.jpg);
-        display: flex;
-        justify-content: center;
-    }
-
-    nav {
-        z-index: 1;
-    }
-
-    #foot {
-        color: white;
-
-        margin-left: 85%;
-        font-family: monospace;
-        font-size: 1.6em;
-        text-align: center;
-    }
-
-    #line {
-        margin-top: 10%;
-    }
-
-    #tir {
-        margin-top: 15%;
-    }
-
-    @media (max-height: 761px) and (max-width: 700px) {
-        nav {
-
-            position: fixed;
         }
 
+
+
+        #three {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background: rgb(0, 0, 0);
+
+        }
+
+        .contain-three {
+
+
+            border-radius: 10px;
+            padding:
+
+        }
+
+
+        body {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: 0;
+            background-color: rgb(13, 0, 49);
+            transition: 1s all;
+        }
+
+        #two {
+            display: flex;
+            /* flex-direction: row; */
+            justify-content: center;
+
+
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(26, 23, 19);
+        }
+
+
+        #button {
+
+            transition: all 0.35s ease-out;
+        }
+
+        #button:hover {
+            color: white;
+            border-style: solid;
+            border-color: aqua;
+            border-radius: .3rem;
+            padding: 0.8rem 0.8rem;
+            box-shadow: 0em 0.5em 0.5em -0.4em aqua;
+
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+
+        .nav {
+            justify-content: center;
+            background: black;
+
+        }
+
+        .nav-list {
+            margin-right: 2rem;
+        }
+
+        li {
+            font-size: 0.8rem;
+        }
+
+        #button {
+
+            transition: all 0.35s ease-out;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        .animation1 {
+            letter-spacing: 6px;
+            margin-bottom: 30px;
+            animation-fill-mode: forwards;
+            animation: cool 1.8s;
+            animation-timing-function: linear;
+
+        }
+
+        .container-one {
+            text-align: center;
+            margin-top: 13vh;
+
+            font-family: 'Luxurious Roman', cursive;
+
+            opacity: 0.7;
+
+
+            border-width: 0.1em;
+
+            animation: blip 1s ease-in-out infinite alternate;
+            animation-timing-function: linear;
+        }
+
+
+
+        .but {
+            display: flex;
+            justify-content: center;
+            border-radius: 50px;
+            padding: 30px 30px;
+            margin-top: 50%;
+
+
+        }
+
+        #button3 {
+
+
+            margin-top: 20vh;
+
+            border-radius: 45px;
+            padding: 30px 30px;
+            background-color: rgb(255, 234, 234);
+            border: none;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12),
+                0 2px 2px rgba(0, 0, 0, 0.12),
+                0 4px 4px rgba(0, 0, 0, 0.12),
+                0 8px 8px rgba(0, 0, 0, 0.12),
+                0 16px 16px rgba(0, 0, 0, 0.12);
+
+        }
+
+        #four {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(255, 234, 234);
+        }
+
+        #button3:hover {
+            background-color: blueviolet;
+            transform: rotate(360deg);
+        }
+    }
+
+    span {
+        opacity: 0;
+        transition: color 3.1s, opacity 1.5s, transform 1.9s;
+        transition-delay: 1.2s;
+        transform: translateY(-43px);
+        display: inline-block;
+
+    }
+
+    span.fade {
+        opacity: 1;
+        transform: translateY(0px);
+        color: aqua;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #000000;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(0, 247, 247);
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(255, 255, 255);
+    }
+
+    @keyframes cool {
+        0% {
+            color: black;
+            margin-bottom: -40px;
+        }
+
+        30% {
+            letter-spacing: 18px;
+            margin-bottom: -40px;
+        }
+
+        85% {
+
+            letter-spacing: 8px;
+            margin-bottom: -40px;
+
+        }
+    }
+
+    .slidein {
+        letter-spacing: 8px;
+        margin-bottom: 20px;
+        opacity: 0;
+        animation: cool2 1s;
+        animation-delay: 2.5s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes cool2 {
+        0% {
+            opacity: 0;
+            letter-spacing: 15px;
+            margin-bottom: -40px;
+
+        }
+
+
+        100% {
+            letter-spacing: 8px;
+            margin-bottom: -40px;
+            opacity: 1;
+        }
+    }
+
+    .container-one {
+        text-align: center;
+        margin-bottom: 15vh;
+
+        font-family: 'Luxurious Roman', cursive;
+
+        opacity: 0.9;
+
+
+        border-width: 0.1em;
+
+        animation: blip 0.8s ease-in-out infinite alternate;
+        animation-timing-function: linear;
+
+    }
+
+    @keyframes blip {
+
+        from {
+            opacity: 0.6;
+            color: aqua;
+
+
+        }
+
+        to {
+            opacity: 0.9;
+            color: aquamarine;
+
+
+        }
+
+
+    }
+
+
+    .li {
+
+        text-align: left;
+        margin-left: 3%;
+
+    }
+
+    #button3 {
+
+
+        margin-top: 10vh;
+
+        border-radius: 45px;
+        padding: 40px 40px;
+        background-color: rgb(255, 234, 234);
+        border: none;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12),
+            0 2px 2px rgba(0, 0, 0, 0.12),
+            0 4px 4px rgba(0, 0, 0, 0.12),
+            0 8px 8px rgba(0, 0, 0, 0.12),
+            0 16px 16px rgba(0, 0, 0, 0.12);
+        transition: all 0.3s ease;
+        cursor: grab;
+
+    }
+
+    #button3:hover {
+        background-color: blueviolet;
+        transform: rotate(360deg);
+    }
+
+    .head {
+        color: tomato;
+    }
+
+
+    h3 {
+
+        color: white;
+        opacity: 0.8;
+        font-family: 'Luxurious Roman', cursive;
+
+
+    }
+
+    .contain-fiv {
+        text-align: center;
+        /* height: 10vh; */
+
+        font-family: 'Luxurious Roman', cursive;
+        opacity: 1;
+        animation: blip 0.8s ease-in-out infinite alternate;
+        animation-timing-function: linear;
+
+    }
+
+    .contain-six {
+
+        padding: 2em 2em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        border-top: rgb(0, 247, 247) solid;
+
+    }
+
+    #cont {
+        transition: all 0.4s ease;
+    }
+
+    #cont:hover {
+        transform: translateY(-5px);
+        border-bottom: 0.2em white;
+
+    }
+
+    footer {
+        margin-bottom: 1em;
     }
 </style>
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
-
-
-<header>
-    <section id="zero">
+<body>
+    <section>
         <nav class="nav">
             <ul>
-                <li><a href="#one" id="button">About</a></li>
-                <li><a href="#two" id="button">Google</a> </li>
-                <li><a href="#middle" id="button">Space</a></li>
-                <li><a href="#three" id="button">Contact</a></li>
+
+                <li><a href="#one" id="button" onclick="onTick();">HOME</a></li>
+                <li><a href="#two" id="button">ABOUT</a></li>
+                <li><a href="#three" id="button">SKILLS</a></li>
+                <li><a href="#four" id="button">MUSIC</a></li>
+                <li><a href="mailto:someone@yoursite.com" target="_blank" rel="noopener noreferrer"
+                        id='button'>CONTACT</a>
+                </li>
             </ul>
         </nav>
     </section>
+    <audio id="myAudio">
 
-</header>
-
-<body>
+        <source src="sky.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <section id="one">
-        <h1>Hello there, I am</h1>
+        <h1 class="animation1">Hello There,</h1>
 
-        <h2 style=color:tomato;>Subhankar</h2>
-        <p><i> <s>(A noob)</s> A Web Developer. </i></p>
+
+        <h2 style=color:tomato;>Welcome</h2>
+
+        <p><i class='slidein'> To My Website </i></p>
 
     </section>
-
     <section id="two">
-        <h1 id="tir">Yep, A Simple Google Search </h1>
-        <form action="https://www.google.com/search" id="butt">
+        <div class='container-one' data-aos="zoom-in" data-aos-duration="900" data-aos-easing="linear">
+            <h1 style=color:tomato>Hello There!!</h1>
+            <h1 class="head">I am Subhankar Panda</h1>
+            <h2> Currently, Undergraduate student in Odisha University Of Technology And Research. (OUTR)</h2>
 
-            <input type="text" placeholder="Wanna Google?" id="google" name="q">
-            <p>
-                <button id="submit">Search Google</button>
-            </p>
 
-        </form>
-    </section>
-    <section id="middle">
-        <video autoplay muted loop id="myVideo" width="1000" height="800">
-            <source src="C:\Users\neutr\OneDrive\Desktop\space.mp4" type="video/mp4">
-        </video>
+        </div>
+        <div class="contain-fiv" data-aos="zoom-in" data-aos-duration="900" data-aos-easing="linear">
+
+            <h1 style=color:tomato>Intrests: </i></h1>
+
+
+            <h2>Web Development (Full stack)</h2>
+            <h2>Open Source</h2>
+            <h2>Machine Learning</h2>
+        </div>
+
 
     </section>
     <section id="three">
-        <h1 id="last">
-            Wanna find me?
-        </h1>
-        <p id="las"><i>How long do you like your hackathons to be?</i> </p>
+        <div class="contain-three" data-aos="flip-left" data-aos-duration="900" data-aos-easing="linear">
+            <h1 style=color:white;>WEB TECHNOLOGIES*</h1>
+            <i class="devicon-html5-plain-wordmark colored" style=font-size:5em;></i>
+            <i class="devicon-css3-plain-wordmark colored" style=font-size:5em;></i>
+            <i class="devicon-javascript-plain colored" style=font-size:5em;></i>
+            <i class="devicon-django-line-wordmark" style=font-size:5em;></i>
 
-        <div id="contact">
-
-            <a id="profile-link" href="https://github.com/Wanderer-of-the-abyss" target="_blank"><i
-                    class="fab fa-github"></i>
-                GitHub</a>
-            <a href="https://twitter.com/Neutrin29392250" target="_blank" id="profile-link"><i
-                    class="fab fa-twitter"></i>
-                Twitter</a>
-            <a href="tel:555-555-5555" id="profile-link"><i class="fas fa-mobile-alt"></i> Call me</a>
-            <a href="https://facebook.com/freecodecamp" target="_blank" id="profile-link"><i
-                    class="fab fa-facebook-square"></i> Facebook</a>
         </div>
-        <hr id="line">
-        <footer id="foot">@XYZ 2021</footer>
+        <div class="contain-four" data-aos="flip-right" data-aos-duration="950" data-aos-easing="linear">
+            <h1>PROGRAMMING LANGUAGES*</h1>
+            <i class="devicon-cplusplus-line-wordmark" style=font-size:5em;></i>
+            <i class="devicon-c-line-wordmark" style=font-size:5em;></i>
+            <i class="devicon-python-plain-wordmark" style=font-size:5em;></i>
+
+        </div>
+        <!-- <div class="tik">
+            <h3>*Thats Everything, I have for now</h3>
+            <h3>Come back again to see if i have more</h3>
+        </div> -->
     </section>
+    <section id="four" data-aos="zoom-in" data-aos-duration="800" data-aos-easing="linear">
+        <button onclick="pauseAudio()" type="button" class="fas fa-pause fa-7x" id="button3"></button>
+
+        <button onclick="playAudio()" type="button" class='fas fa-play fa-7x' id="button3"></button>
+
+    </section>
+    <h1>Connect with me...</h1>
+
+    <section class="contain-six">
+
+        <a href="https://www.facebook.com/profile.php?id=100073173090255"><i class="fab fa-facebook-square fa-3x"
+                id="cont"></i></a>
+        <a href="https://www.linkedin.com/in/subhankar-panda-08b5801ba/" id="cont"><i
+                class="fab fa-linkedin-in fa-3x"></i></a>
+        <a href="https://github.com/Wanderer-of-the-abyss" id="cont"><i class="fab fa-github fa-3x"></i></a>
+        <a href="https://twitter.com/Neutrin29392250" id="cont"><i class="fab fa-twitter fa-3x"></i></a>
+    </section>
+    <footer>Copyright ©2022 All rights reserved </footer>
+    <footer>Handcrafted by <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Subhankar Panda</a></footer>
+    <script>
+
+        const text = document.querySelector("h2");
+
+        const text2 = text.textContent;
+        const split = text2.split("");
+        text.textContent = "";
+        for (let i = 0; i < split.length; i++)
+            text.innerHTML += "<span>" + split[i] + "</span>";
+
+        let char = 0;
+        let timer = setInterval(onTick, 50);
+
+        function onTick() {
+            const span = document.querySelectorAll("span")[char];
+            span.classList.add('fade');
+            char++
+            if (char === split.length) {
+                complete();
+                return;
+            }
+            function complete() {
+                clearInterval(timer);
+                timer = null;
+            }
+        }
+
+        var x = document.getElementById("myAudio");
+
+        function playAudio() {
+            x.play();
+        }
+
+        function pauseAudio() {
+            x.pause();
+        }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
