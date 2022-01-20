@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,12 +11,15 @@
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
-    <link rel = "icon" href = 
-"https://img.icons8.com/nolan/344/s.png" 
-        type = "image/x-icon">
+    <link rel="icon" href="https://img.icons8.com/nolan/344/s.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="resource.css">
 
     <script src="https://kit.fontawesome.com/b6960363e6.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
@@ -22,546 +27,7 @@
 </head>
 <html>
 
-<style>
-    html {
-        font-size: 1rem;
-        scroll-behavior: smooth;
-        color: aliceblue;
-        text-align: center;
-    }
 
-
-    body {
-
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin: 0;
-        background-color: rgb(13, 0, 49);
-        transition: 1s all;
-    }
-
-
-    h1 {
-        font-family: monospace;
-
-        font-size: 2.2em;
-
-    }
-
-    .animation1 {
-        letter-spacing: 8px;
-        margin-bottom: 20px;
-
-
-
-        animation: cool 2.1s;
-        animation-timing-function: linear;
-
-    }
-
-
-
-    @keyframes cool {
-        0% {
-            color: black;
-            margin-bottom: -40px;
-        }
-
-        30% {
-            letter-spacing: 50px;
-            margin-bottom: -40px;
-        }
-
-        85% {
-
-            letter-spacing: 15px;
-            margin-bottom: -40px;
-
-        }
-    }
-
-    ul {
-        display: flex;
-        justify-content: space-around;
-        list-style: none;
-        margin-right: 2rem;
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
-        font-family: monospace;
-
-    }
-
-    li {
-        padding: 1rem;
-        color: white;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 1.3rem;
-    }
-
-    .nav {
-        display: flex;
-        /* flex-direction: column; */
-
-        position: fixed;
-        justify-content: flex-end;
-        width: 100%;
-        top: 0;
-        left: 0;
-        background: rgb(49, 49, 49);
-        box-shadow: 0 2px 0 rgb(169, 220, 255);
-        z-index: 10;
-
-
-    }
-
-    .nav-list {
-        display: flex;
-        flex-direction: column;
-        margin-right: 2rem;
-    }
-
-
-    #one {
-        display: flex;
-        background-image: url(https://images.unsplash.com/photo-1468657988500-aca2be09f4c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJsYWNrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment:fixed;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-        color: white;
-        font-family: monospace;
-        font-size: 1.5rem;
-    }
-
-
-
-    #two {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-
-        width: 100%;
-        height: 100vh;
-        background-color: rgb(26, 23, 19);
-    }
-
-    #three {
-        display: flex;
-        /* flex-direction: column; */
-         background-image: url(https://cdn.pixabay.com/photo/2014/12/30/13/44/programming-583923__340.jpg);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-      
-
-    }
-
-    #four {
-        display: flex;
-        /* flex-direction: column-reverse; */
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-        background-color: rgb(255, 234, 234);
-        background-image: url(https://media.istockphoto.com/photos/studio-microphone-and-pop-shield-on-mic-in-the-empty-recording-studio-picture-id1279654034?b=1&k=20&m=1279654034&s=170667a&w=0&h=jebzMhp_tlJi-3fLn3Ig8cYWG_JaF-vjt4SWLAI9o9Q=);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    #button {
-
-        transition: all 0.35s ease-out;
-    }
-
-    #button:hover {
-        color: white;
-        border-style: solid;
-        border-color: aqua;
-        border-radius: .3rem;
-        padding: 0.8rem 0.8rem;
-        box-shadow: 0em 0.5em 0.5em -0.4em aqua;
-
-    }
-
-    @media (max-width: 28.75em) {
-        #four {
-            display: flex;
-            /* flex-direction: column-reverse; */
-            justify-content: space-around;
-            align-items: center;
-            width: 100%;
-            height: 100vh;
-            background-color: rgb(255, 234, 234);
-
-
-        }
-
-
-
-        #three {
-        display: flex;
-        /* flex-direction: column; */
-         background-image: url(https://cdn.pixabay.com/photo/2014/12/30/13/44/programming-583923__340.jpg);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-        background: rgb(0, 0, 0);
-
-    }
-        .contain-three {
-
-
-            border-radius: 10px;
-            padding:
-
-        }
-
-
-        body {
-
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            margin: 0;
-            background-color: rgb(13, 0, 49);
-            transition: 1s all;
-        }
-
-        #two {
-            display: flex;
-            /* flex-direction: row; */
-            justify-content: center;
-
-
-            width: 100%;
-            height: 100vh;
-            background-color: rgb(26, 23, 19);
-        }
-
-
-        #button {
-
-            transition: all 0.35s ease-out;
-        }
-
-        #button:hover {
-            color: white;
-            border-style: solid;
-            border-color: aqua;
-            border-radius: .3rem;
-            padding: 0.8rem 0.8rem;
-            box-shadow: 0em 0.5em 0.5em -0.4em aqua;
-
-        }
-
-        p {
-            font-size: 1.1rem;
-        }
-
-        .nav {
-            justify-content: center;
-            background: black;
-
-        }
-
-        .nav-list {
-            margin-right: 2rem;
-        }
-
-        li {
-            font-size: 0.8rem;
-        }
-
-        #button {
-
-            transition: all 0.35s ease-out;
-        }
-
-        h1 {
-            font-size: 2rem;
-        }
-
-        .animation1 {
-            letter-spacing: 6px;
-            margin-bottom: 30px;
-            animation-fill-mode: forwards;
-            animation: cool 1.8s;
-            animation-timing-function: linear;
-
-        }
-
-        .container-one {
-            text-align: center;
-            margin-top: 13vh;
-
-            font-family: 'Luxurious Roman', cursive;
-
-            opacity: 0.7;
-
-
-            border-width: 0.1em;
-
-            animation: blip 1s ease-in-out infinite alternate;
-            animation-timing-function: linear;
-        }
-
-
-
-        .but {
-            display: flex;
-            justify-content: center;
-            border-radius: 50px;
-            padding: 30px 30px;
-            margin-top: 50%;
-
-
-        }
-
-        #button3 {
-
-
-            margin-top: 20vh;
-
-            border-radius: 45px;
-            padding: 30px 30px;
-            background-color: rgb(255, 234, 234);
-            border: none;
-            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12),
-                0 2px 2px rgba(0, 0, 0, 0.12),
-                0 4px 4px rgba(0, 0, 0, 0.12),
-                0 8px 8px rgba(0, 0, 0, 0.12),
-                0 16px 16px rgba(0, 0, 0, 0.12);
-
-        }
-
-        #four {
-            display: flex;
-            flex-direction: column-reverse;
-            justify-content: space-around;
-            align-items: center;
-            width: 100%;
-            height: 100vh;
-            background-color: rgb(255, 234, 234);
-        }
-
-        #button3:hover {
-            background-color: blueviolet;
-            transform: rotate(360deg);
-        }
-    }
-
-    span {
-        opacity: 0;
-        transition: color 3.1s, opacity 1.5s, transform 1.9s;
-        transition-delay: 1.2s;
-        transform: translateY(-43px);
-        display: inline-block;
-
-    }
-
-    span.fade {
-        opacity: 1;
-        transform: translateY(0px);
-        color: aqua;
-    }
-
-    ::-webkit-scrollbar {
-        width: 0.5rem;
-    }
-
-    /* Track */
-    ::-webkit-scrollbar-track {
-        background: #000000;
-    }
-
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-        background: rgb(0, 247, 247);
-    }
-
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-        background: rgb(255, 255, 255);
-    }
-
-    @keyframes cool {
-        0% {
-            color: black;
-            margin-bottom: -40px;
-        }
-
-        30% {
-            letter-spacing: 18px;
-            margin-bottom: -40px;
-        }
-
-        85% {
-
-            letter-spacing: 8px;
-            margin-bottom: -40px;
-
-        }
-    }
-
-    .slidein {
-        letter-spacing: 8px;
-        margin-bottom: 20px;
-        opacity: 0;
-        animation: cool2 1s;
-        animation-delay: 2.5s;
-        animation-fill-mode: forwards;
-    }
-
-    @keyframes cool2 {
-        0% {
-            opacity: 0;
-            letter-spacing: 15px;
-            margin-bottom: -40px;
-
-        }
-
-
-        100% {
-            letter-spacing: 8px;
-            margin-bottom: -40px;
-            opacity: 1;
-        }
-    }
-
-    .container-one {
-        text-align: center;
-        margin-bottom: 15vh;
-
-        font-family: 'Luxurious Roman', cursive;
-
-        opacity: 0.9;
-
-
-        border-width: 0.1em;
-
-        animation: blip 0.8s ease-in-out infinite alternate;
-        animation-timing-function: linear;
-
-    }
-
-    @keyframes blip {
-
-        from {
-            opacity: 0.6;
-            color: aqua;
-
-
-        }
-
-        to {
-            opacity: 0.9;
-            color: aquamarine;
-
-
-        }
-
-
-    }
-
-
-    .li {
-
-        text-align: left;
-        margin-left: 3%;
-
-    }
-
-    #button3 {
-
-
-        margin-top: 10vh;
-
-        border-radius: 45px;
-        padding: 40px 40px;
-        background-color: rgb(255, 234, 234);
-        border: none;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12),
-            0 2px 2px rgba(0, 0, 0, 0.12),
-            0 4px 4px rgba(0, 0, 0, 0.12),
-            0 8px 8px rgba(0, 0, 0, 0.12),
-            0 16px 16px rgba(0, 0, 0, 0.12);
-        transition: all 0.3s ease;
-        cursor: grab;
-
-    }
-
-    #button3:hover {
-        background-color: blueviolet;
-        transform: rotate(360deg);
-    }
-
-    .head {
-        color: tomato;
-    }
-
-
-    h3 {
-
-        color: white;
-        opacity: 0.8;
-        font-family: 'Luxurious Roman', cursive;
-
-
-    }
-
-    .contain-fiv {
-        text-align: center;
-        /* height: 10vh; */
-
-        font-family: 'Luxurious Roman', cursive;
-        opacity: 1;
-        animation: blip 0.8s ease-in-out infinite alternate;
-        animation-timing-function: linear;
-
-    }
-
-    .contain-six {
-
-        padding: 2em 2em;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        border-top: rgb(0, 247, 247) solid;
-
-    }
-
-    #cont {
-        transition: all 0.4s ease;
-    }
-
-    #cont:hover {
-        transform: translateY(-5px);
-        border-bottom: 0.2em white;
-
-    }
-
-    footer {
-        margin-bottom: 1em;
-    }
-</style>
 
 <body>
     <section>
@@ -575,6 +41,8 @@
                 <li><a href="mailto:someone@yoursite.com" target="_blank" rel="noopener noreferrer"
                         id='button'>CONTACT</a>
                 </li>
+
+
             </ul>
         </nav>
     </section>
@@ -584,48 +52,74 @@
         Your browser does not support the audio element.
     </audio>
     <section id="one">
-        <h1 class="animation1">Hello There,</h1>
+        <h1 class="tracking-in-expand">Hello There,</h1>
 
 
-        <h2 style=color:tomato;>Welcome</h2>
+        <h2 style="color:rgb(123, 213, 255);">Welcome</h2>
 
         <p><i class='slidein'> To My Website </i></p>
 
     </section>
     <section id="two">
-        <div class='container-one' data-aos="zoom-in" data-aos-duration="900" data-aos-easing="linear">
-            <h1 style=color:tomato>Hello There!!</h1>
-            <h1 class="head">I am Subhankar Panda</h1>
-            <h2> Currently, Undergraduate student in Odisha University Of Technology And Research. (OUTR)</h2>
+        <div class='container-one' style="opacity:0">
+            <!-- <h1>Hello There!!</h1> -->
+            <h1>I am Subhankar</h1>
 
+            <h2>A Web Developer. </h2>
+            <h2 style="font-size:1em">(Scroll down)</h2>
+
+            <img id="imag"
+                src="https://media-exp1.licdn.com/dms/image/C4D03AQG9i6NhU0_NhA/profile-displayphoto-shrink_800_800/0/1634481284789?e=1648080000&v=beta&t=ZVn2fMgfktz4KTOYpPj_nmK7qIX4Qf8X2cRPiUELX9s"
+                alt="">
 
         </div>
-        <div class="contain-fiv" data-aos="zoom-in" data-aos-duration="900" data-aos-easing="linear">
 
-            <h1 style=color:tomato>Intrests: </i></h1>
+        <div class="doc-one">
+            <h1>Currently, an Undergraduate in Odisha University Of Technology And Research. (OUTR)</h1>
+            <img style="width:20em" style=" height:20em" style="border-radius:5px"
+                src="data:image/jpeg;base64,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"
+                alt="">
+        </div>
+        <div class="doc-two">
+            <h1>My Intrests:</h1>
+            <h2>> Full Stack Web Development</h2>
+            <h2>> Machine Learning</h2>
+            <h2>> Competitive programming</h2>
+
+        </div>
+        <div class="doc-three">
+            <h1>And yeah, I love Anime.</h1>
+            <h3>Notice Me</h3>
+            <img src="death-note.jpg" alt="" id="anime">
+            <h3>Senpai!!</h3>
+        </div>
+
+        <!-- <div class="contain-fiv">
+
+            <h1>Intrests: </i></h1>
 
 
             <h2>Web Development (Full stack)</h2>
             <h2>Open Source</h2>
             <h2>Machine Learning</h2>
         </div>
-
+ -->
 
     </section>
     <section id="three">
-        <div class="contain-three" data-aos="flip-left" data-aos-duration="900" data-aos-easing="linear">
-            <h1 style=color:white;>WEB TECHNOLOGIES*</h1>
+        <div class="contain-three" data-aos="flip-left" data-aos-duration="950" data-aos-easing="linear">
+            <h1 style=color:black;>WEB TECHNOLOGIES*</h1>
             <i class="devicon-html5-plain-wordmark colored" style=font-size:5em;></i>
             <i class="devicon-css3-plain-wordmark colored" style=font-size:5em;></i>
             <i class="devicon-javascript-plain colored" style=font-size:5em;></i>
-            <i class="devicon-django-line-wordmark" style=font-size:5em;></i>
+            <i class="devicon-nodejs-plain colored" style=font-size:5em;></i>
 
         </div>
         <div class="contain-four" data-aos="flip-right" data-aos-duration="950" data-aos-easing="linear">
-            <h1>PROGRAMMING LANGUAGES*</h1>
-            <i class="devicon-cplusplus-line-wordmark" style=font-size:5em;></i>
-            <i class="devicon-c-line-wordmark" style=font-size:5em;></i>
-            <i class="devicon-python-plain-wordmark" style=font-size:5em;></i>
+            <h1 style=color:black;>PROGRAMMING LANGUAGES*</h1>
+            <i class="devicon-cplusplus-line colored" style=font-size:5em;></i>
+            <i class="devicon-c-line colored" style=font-size:5em;></i>
+            <i class="devicon-python-plain-wordmark colored" style=font-size:5em;></i>
 
         </div>
         <!-- <div class="tik">
@@ -633,14 +127,16 @@
             <h3>Come back again to see if i have more</h3>
         </div> -->
     </section>
-    <section id="four" data-aos="zoom-in" data-aos-duration="800" data-aos-easing="linear">
+    <section id="four">
         <button onclick="pauseAudio()" type="button" class="fas fa-pause fa-7x" id="button3"></button>
 
         <button onclick="playAudio()" type="button" class='fas fa-play fa-7x' id="button3"></button>
 
     </section>
-    <h1>Connect with me...</h1>
+    <section>
+        <h1 style="color: black">Connect with me...</h1>
 
+    </section>
     <section class="contain-six">
 
         <a href="https://www.facebook.com/profile.php?id=100073173090255"><i class="fab fa-facebook-square fa-3x"
@@ -649,10 +145,17 @@
                 class="fab fa-linkedin-in fa-3x"></i></a>
         <a href="https://github.com/Wanderer-of-the-abyss" id="cont"><i class="fab fa-github fa-3x"></i></a>
         <a href="https://twitter.com/Neutrin29392250" id="cont"><i class="fab fa-twitter fa-3x"></i></a>
+
     </section>
-    <footer>Copyright ©2022 All rights reserved </footer>
-    <footer>Handcrafted by <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Subhankar Panda</a></footer>
+    <footer>Copyright ©2022 All rights reserved || Handcrafted by <a
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Subhankar Panda</a></footer>
+
+
+
     <script>
+        ScrollOut({
+            /* options */
+        });
 
         const text = document.querySelector("h2");
 
@@ -693,6 +196,93 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <!-- <script>
+        ScrollOut();
+    </script>  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script>
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".container-one",
+                start: "top 45%",
+                end: "center 5%",
+                scrub: 4,
+
+
+            }
+        });
+        tl.to(".container-one", { scale: 0.7, opacity: 1 });
+        tl.to(".container-one", { opacity: 0 });
+
+        const tk = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".doc-one",
+                start: "top 75%",
+                end: "center 20%",
+                scrub: 3,
+
+
+
+            }
+        });
+        tk.to(".doc-one", { scale: 0.7, opacity: 1, spacing: 0.5 });
+        tk.to(".doc-one", { opacity: 0 });
+
+        const tm = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".doc-two",
+                start: "top 55%",
+                end: "center 20%",
+                scrub: 3,
+
+
+
+            }
+        });
+        tm.to(".doc-two", { scale: 0.7, opacity: 1 });
+        tm.to(".doc-two", { opacity: 0 });
+
+        const ta = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".doc-three",
+                start: "top 35%",
+                end: "center 20%",
+                scrub: 3,
+
+
+
+
+            }
+        });
+        ta.to(".doc-three", { scale: 0.7, opacity: 1 });
+        ta.to(".doc-three", { opacity: 0 });
+
+
+
+
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        const options = {
+            bottom: '64px', // default: '32px'
+            right: 'unset', // default: '32px'
+            left: '32px', // default: 'unset'
+            time: '0.6s', // default: '0.3s'
+            mixColor: '#fff', // default: '#fff'
+            backgroundColor: '#fff',  // default: '#fff'
+            buttonColorDark: '#100f2c',  // default: '#100f2c'
+            buttonColorLight: '#fff', // default: '#fff'
+            saveInCookies: false, // default: true,
+            label: '🌓', // default: ''
+            autoMatchOsTheme: true // default: true
+        }
+
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget();
     </script>
 </body>
 
